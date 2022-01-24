@@ -1,5 +1,5 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>BC-Penguin</title>
@@ -13,13 +13,93 @@
     <meta property="og:image" content="https://i.ibb.co/8bjQT7C/favicon-32x32.png" />
     <meta property="og:description" content="Official website of BCYAYAY otherwise known as BCYAYAY14." />
     <meta name="theme-color" content="#000080">
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
-
 <body>
-    <p>
-        Test
-    </p>
-</body>
+<div class="navbar">
+    <div class="container">
+        <a href="#" class="logo">BC-<span>Penguin</span></a>
+        <img id="mobile-cta" class="mobile-nav" src="images/menu.svg" alt="Open Navigation Menu">
+        <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation Menu">
 
+            <ul class="primary-nav">
+                <li class="home"> <a href="#">Home</a> </li>
+                <li> <a href="#">About</a> </li>
+            </ul>
+
+            <ul class="secondary-nav">
+                <li class="contact"> <a href="#contact-container">Contact</a> </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="container">
+        <div class="left-col">
+            <p class="subhead">Penguins are cool</p>
+            <h1>BC-Penguin</h1>
+
+            <div class="hero-cta">
+                <a href="#" class="primary-cta">
+                    More Info
+                </a>
+            </div>
+        </div>
+
+        <img src="images/pfp.png" class="hero-img"alt="Penguin PFP">
+    </div>
+</section>
+
+<section class="features-section">
+    <div class="container">
+        <ul class="features-list">
+            <li>Developer</li>
+            <li>Gamer</li>
+            <li>And much more</li>
+        
+        </ul>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div id="contact-container">
+    <div class="container">
+        <div class="contact-left">
+            <h2>Contact</h2>
+            <form action="mailto:br14n.universe@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email">
+                
+                <label for="message">Message</label>
+               <textarea name="message" id="message" cols="30" rows="10" placeholder="A short message"></textarea>
+
+               <input type="submit" class="send-message-cta" value="Send message ">
+            </form>
+        </div>
+    </div>
+    </div>  
+</section>
+
+    <script>
+        const mobileCta = document.getElementById('mobile-cta'), 
+            nav = document.querySelector('nav'),
+            mobileCtaExit = document.getElementById('mobile-exit')
+        
+        mobileCta.addEventListener('click', () => {
+            
+            nav.classList.add('mobile-btn')
+        })
+
+        mobileCtaExit.addEventListener('click', () => {
+            nav.classList.remove('mobile-btn')
+        })
+    </script>
+
+</body>
 </html>
