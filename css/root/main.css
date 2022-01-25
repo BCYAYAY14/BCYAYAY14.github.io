@@ -13,6 +13,7 @@ body {
 .navbar {
   background: white;
   padding: 1em;
+  border-radius: 5.3em;
 }
 
 .navbar .logo {
@@ -91,6 +92,7 @@ section {
 .features-section {
   background: #1d74a7;
   color: white;
+  border-radius: 3em;
 }
 
 .features-list {
@@ -199,6 +201,7 @@ nav li a:hover {
     display: grid;
     -ms-grid-columns: 180px auto;
         grid-template-columns: 180px auto;
+    border-radius: 1;
   }
   .navbar nav {
     display: -webkit-box;
@@ -270,5 +273,18 @@ nav li a:hover {
     width: 30%;
     margin-right: 8em;
   }
+}
+
+.dark-mode {
+  background-color: #222430;
+  color: white;
+}
+
+textarea {
+  font-family: Poppins;
+}
+
+input {
+  font-family: Poppins;
 }
 /*# sourceMappingURL=main.css.map */

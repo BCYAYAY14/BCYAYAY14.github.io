@@ -31,6 +31,9 @@
 
             <ul class="secondary-nav">
                 <li class="contact"> <a href="#contact-container">Contact</a> </li>
+                <li class="toggle-mode"> <a href="#" id="toggle-mode">Toggle light/dark mode</a> </li>
+                            
+                
             </ul>
         </nav>
     </div>
@@ -100,6 +103,14 @@
             nav.classList.remove('mobile-btn')
         })
     </script>
+    <script>
+        const darkMode = document.getElementById('toggle-mode')
+        body = document.getElementsByTagName('body')
 
+         darkMode.addEventListener('click', () => {
+            
+            document.body.classList.toggle('dark-mode')
+        })
+    </script>
 </body>
 </html>
