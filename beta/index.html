@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BC-Penguin Beta Access</title>
+    <link rel="stylesheet" href="beta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="hero-img"></div>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">BC-<span>Penguin</span></a>
+
+            <nav>
+                <svg xmlns="http://www.w3.org/2000/svg" class="close"
+                viewBox="0 0 40 40"
+                style=" fill:#000000;"><path fill="#dff0fe" d="M21 24.15L8.857 36.293 4.707 32.143 16.85 20 4.707 7.857 8.857 3.707 21 15.85 33.143 3.707 37.293 7.857 25.15 20 37.293 32.143 33.143 36.293z"></path><path fill="#4788c7" d="M33.143,4.414l3.443,3.443L25.15,19.293L24.443,20l0.707,0.707l11.436,11.436l-3.443,3.443 L21.707,24.15L21,23.443l-0.707,0.707L8.857,35.586l-3.443-3.443L16.85,20.707L17.557,20l-0.707-0.707L5.414,7.857l3.443-3.443 L20.293,15.85L21,16.557l0.707-0.707L33.143,4.414 M33.143,3L21,15.143L8.857,3L4,7.857L16.143,20L4,32.143L8.857,37L21,24.857 L33.143,37L38,32.143L25.857,20L38,7.857L33.143,3L33.143,3z"></path></svg>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#features-list">More Info</a></li>
+                </ul>
+              
+               
+            </nav>
+            <svg xmlns="http://www.w3.org/2000/svg" class="menu" viewBox="0 0 80 80">
+                <path fill="#c2e8ff" d="M2.5 36.5H77.5V43.5H2.5z" />
+                <path fill="#7496c4" d="M77,37v6H3v-6H77 M78,36H2v8h76V36L78,36z" />
+                <path fill="#c2e8ff" d="M2.5 16.5H77.5V23.5H2.5z" />
+                <path fill="#7496c4" d="M77,17v6H3v-6H77 M78,16H2v8h76V16L78,16z" />
+                <g>
+                    <path fill="#c2e8ff" d="M2.5 56.5H77.5V63.5H2.5z" />
+                    <path fill="#7496c4" d="M77,57v6H3v-6H77 M78,56H2v8h76V56L78,56z" />
+                </g>
+            </svg>
+            
+        </header>
+        <section class="hero">
+                <h1>BCYAYAY's website</h1>
+                <p class="subhead">Penguins are cool!</p>
+                <svg class="down-arrow" viewBox="0 0 16 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z" fill="black"/>
+                </svg>
+            </section>
+
+        <section class="features-list">
+                <div class="feature">
+                    <div class="content">
+                        <p class="title">
+                            Developer
+                        </p>
+                        <p class="desc">
+                            Codes in JavaScript, Html, Css and learning more!
+                        </p>
+                    </div>
+                        <img src="../images//coding.jpg" alt="">
+
+                </div>
+                <div class="feature left">
+                    <div class="content">
+                        <p class="title">
+                            Developer
+                        </p>
+                        <p class="desc">
+                            Codes in JavaScript, Html, Css and learning more!
+                        </p>
+                    </div>
+                        <img src="../images//coding.jpg" alt="">
+
+                </div>
+                <div class="feature">
+                    <div class="content">
+                        <p class="title">
+                            Developer
+                        </p>
+                        <p class="desc">
+                            Codes in JavaScript, Html, Css and learning more!
+                        </p>
+                    </div>
+                        <img src="../images//coding.jpg" alt="">
+
+                </div>
+
+
+        </section>
+    </div>
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+</body>
+
+</html>
